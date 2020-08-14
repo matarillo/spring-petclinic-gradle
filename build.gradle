@@ -32,6 +32,10 @@ version = '2.3.1.BUILD-SNAPSHOT'
 description = 'petclinic'
 sourceCompatibility = '1.8'
 
+bootJar {
+    archiveBaseName = 'spring-petclinic'
+}
+
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
