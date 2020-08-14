@@ -58,6 +58,7 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-thymeleaf</artifactId>
     </dependency>
+<!--
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
@@ -69,6 +70,7 @@
             </exclusion>
         </exclusions>
     </dependency>
+-->
 
     <!-- Databases - Uses H2 by default -->
     <dependency>
@@ -135,6 +137,7 @@
 
   <build>
     <plugins>
+<!--
       <plugin>
         <groupId>io.spring.javaformat</groupId>
         <artifactId>spring-javaformat-maven-plugin</artifactId>
@@ -148,6 +151,8 @@
           </execution>
         </executions>
       </plugin>
+-->
+<!--
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
@@ -182,6 +187,7 @@
           </execution>
         </executions>
       </plugin>
+-->
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
@@ -203,6 +209,7 @@
           </execution>
         </executions>
       </plugin>
+<!--
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
@@ -222,6 +229,7 @@
           </execution>
         </executions>
       </plugin>
+-->
 
       <!-- Spring Boot Actuator displays build-related information if a git.properties
         file is present at the classpath -->
