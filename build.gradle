@@ -40,13 +40,3 @@ bootJar {
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
-
-jib {
-    to {
-        image = JIB_IMAGE
-        auth {
-            username = JIB_USERNAME
-            password = JIB_PASSWORD
-        }
-    }
-}
