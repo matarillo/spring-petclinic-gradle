@@ -1,5 +1,6 @@
 plugins {
     id 'org.springframework.boot' version '2.3.1.RELEASE'
+    id 'com.google.cloud.tools.jib' version '2.5.0'
 }
 
 apply plugin: 'java'
@@ -38,4 +39,14 @@ bootJar {
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
+}
+
+jib {
+    to {
+        image = JIB_IMAGE
+        auth {
+            username = JIB_USERNAME
+            password = JIB_PASSWORD
+        }
+    }
 }
