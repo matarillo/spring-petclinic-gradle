@@ -40,3 +40,9 @@ bootJar {
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
+
+jib {
+    container {
+        jvmFlags = ['-javaagent:/appd-javaagent/javaagent.jar']
+    }
+}
